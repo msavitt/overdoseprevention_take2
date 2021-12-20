@@ -1,0 +1,109 @@
+/**********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+
+
+* {
+    box-sizing: border-box;
+    max-width: 95%
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+.container {
+
+margin: 0 auto;
+max-width: 800px;
+padding: 45px;
+background-color: lightgray;
+font-size: 20px;
+text-align: center;
+}
+
+
+p {
+  font-size: 16px;
+  text-align: left;
+}
+
+h1 {font-size: 32px;
+}
+
+h2 {font-size: 18px;
+}
+
+h3 {font-size: 16px;
+}
+
+figcaption {
+  color: black;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.img {
+max-width: 100%;
+}
+
+.flex{
+  /*
+  * When two elements combined exceed 100%
+  * wrap to a new row
+  */
+ flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+  /*
+  * When the flex-basis doesn't add up to 100%,
+  * distribute the negative space between the
+  * elements
+  */
+
+.text{
+  padding: 30px;
+  margin-bottom: 23px;
+  border: 1px solid #000;
+  text-align: left;
+}
+
+/*
+* Flex-basis between elements in a row add up to
+* 97% and the 3% is distributed
+*/
+
+.text {
+  flex-basis: 100%;
+  font-size: 40px;
+}
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 315px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+.flex {
+  display: flex;
+  max-width: 95%;
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
